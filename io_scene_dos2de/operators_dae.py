@@ -74,7 +74,7 @@ class Divine_ExportSettings(PropertyGroup):
     x_flip_meshes: BoolProperty(
         name="Flip meshes on X axis",
         description="BG3/DOS2 meshes are usually x-flipped in the GR2 file",
-        default=True
+        default=False
     )
 
     keep_bind_info: BoolProperty(
@@ -403,7 +403,7 @@ class DIVINITYEXPORTER_OT_export_collada(Operator, ExportHelper):
         name="Selected Only",
         description="Export only selected objects (and visible in active "
                     "layers if that applies)",
-        default=False
+        default=True
         )
 
     use_export_visible: BoolProperty(
